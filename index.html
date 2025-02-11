@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/my.css">
+    <link rel="stylesheet" href="./style/my.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
     <title>Услуги таролога</title>
+
 </head>
 <body>
     <header>
@@ -17,16 +18,23 @@
                 <div class="logo"><img src="./images/logo.png" alt="#"></div>
                 <div class="header-info">
                 <div class="header-navigation">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Кому это подходит?</a></li>
-                            <li><a href="#">Содержание сеанса</a></li>
-                            <li><a href="#">Отзывы</a></li>
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="#" class="menu-link">Кому это подходит?</a></li>
+                            <li><a href="#" class="menu-link">Содержание сеанса</a></li>
+                            <li><a href="#" class="menu-link">Отзывы</a></li>
                         </ul>
+                        <button class="btn-order1">Заказать расклад</button>
                     </nav>
+                    
                 </div>
                 <button class="btn-order">Заказать расклад</button>
             </div>
+            <button class="header-burger-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             </div>
         </div>
     </header>
@@ -55,9 +63,9 @@
                                 повторных<br>сеансов
                             </div>
                         </div>
-                     </div>
-                     <div class="block-sign-up"><button class="sign-up-btn">Записаться на приём</button></div>
+                     </div>        
             </div>
+            <div class="block-sign-up"><button class="sign-up-btn">Записаться на приём</button></div>
         </div>
         <div class="main-content-image">
             <img src="/images/main-cards.png" alt="#">
@@ -73,7 +81,13 @@
             <div class="left-card"><img src="./images/left-card.png" alt="#"></div>
             <div class="right-card"><img src="./images/right-card.png" alt="#"></div>
             <div class="image-block">
-            <img src="./images/Загагулига.png" alt="#">
+            <picture>
+                <source srcset="./images/Загагулига-mob.png" media="(max-width: 768px)">
+                <source srcset="./images/Загагулига-blank.png" media="(max-width: 1260px)">       
+                <source srcset="./images/Загагулига.png">
+                <img srcset="./images/Загагулига.png" alt="#">
+            </picture>
+
             <div class="step" id="first-step"><p>Тем, кто устал ошибаться, хочет<br> знать, как ему действовать дальше</p></div>
             <div class="step" id="second-step">Тем, кто ищет ответы на важные вопросы о будущем</div>
             <div class="step" id="third-step">Тем, кто хочет восстановить баланс между сердцем и разумом</div>
@@ -93,14 +107,24 @@
                     <div class="service-description-text"><p>Вы получите ясность о том, какие возможности и<br> препятствия ждут вас на пути к карьерным и<br> финансовым достижениям</p></div>
                     <div class="service-description-image" ><img src="./images/Star.png" alt="#"></div>
                 </div>
-                <div class="service-description-block">
+                <div class="service-description-block" id="second">
                     <div class="service-description-text"><p>Мы определим, что нужно изменить в вашей<br> жизни для гармонизации внутренних конфликтов<br> и достижения личного счастья</p></div>
                     <div class="service-description-image" ><img src="./images/Star.png" alt="#"></div>
                 </div>
-                <div class="service-description-block">
+                <div class="service-description-block" id="third">
                     <div class="service-description-text"><p>Вы познаете себя, примите важные<br> решения и найдёте гармонию в жизни</p></div>
                     <div class="service-description-image" ><img src="./images/Star.png" alt="#"></div>
                 </div>
+            
+                    <div class="service-description-block" id="first">
+                        <div class="service-description-text"><p>Таролог поможет выявить причины<br> определённых проблем или затруднений,<br> а также предложит пути их преодоления</p></div>
+                        <div class="service-description-image" ><img src="./images/Star.png" alt="#"></div>
+                    </div>
+                    <div class="service-description-block" id="last">
+                        <div class="service-description-text"><p>Мы разберем, как развиваются ваши<br> отношения с близкими людьми и что<br> можно сделать для их улучшения</p></div>
+                        <div class="service-description-image"><img src="./images/Star.png" alt="#"></div>
+                    </div>
+                
             </div>
             <div class="image-service"><img src="./images/service.png" alt="#"></div>
             <div class="right-description-service">
@@ -161,57 +185,57 @@
 </div>
 </div>
 <div class="our-services">
-<div class="container">
-    <div class="main-services">
-        <div class="title-services">Наши услуги</div>
-        <div class="services-content">
-            <div class="service-block" id="first-block">
-                <div class="service-name">Экспресс онлайн-расклад</div>
-                <div class="service-description">
-                    <ul>
-                        <li>Расклад у профессионального таролога</li>
-                    </ul>
+    <div class="container">
+        <div class="main-services">
+            <div class="title-services">Наши услуги</div>
+            <div class="services-content">
+                <div class="service-block" id="first-block">
+                    <div class="service-name">Экспресс онлайн-расклад</div>
+                    <div class="service-description">
+                        <ul>
+                            <li>Расклад у профессионального таролога</li>
+                        </ul>
+                    </div>
+                    <div class="service-info">
+                        <button class="service-btn">Получить расклад</button>
+                        <div class="service-price">1000<span>₽</span></div>
+                    </div>
                 </div>
-                <div class="service-info">
-                    <button class="service-btn">Получить расклад</button>
-                    <div class="service-price">1000<span>₽</span></div>
+                <div class="service-block" id="second-block">
+                    <div class="service-name">Онлайн-консультация</div>
+                    <div class="service-description">
+                        <ul>
+                            <li>Расклад у профессионального таролога</li>
+                            <li>Детальный разбор ситуации</li>
+                            <li>Общение с тарологом по видеосвязи</li>
+                        </ul>
+                    </div>
+                    <div class="service-info">
+                        <button class="service-btn">Заказать консультацию</button>
+                        <div class="service-price">1000<span>₽</span></div>
+                    </div>
                 </div>
-            </div>
-            <div class="service-block" id="second-block">
-                <div class="service-name">Онлайн-консультация</div>
-                <div class="service-description">
-                    <ul>
-                        <li>Расклад у профессионального таролога</li>
-                        <li>Детальный разбор ситуации</li>
-                        <li>Общение с тарологом по видеосвязи</li>
-                    </ul>
-                </div>
-                <div class="service-info">
-                    <button class="service-btn">Заказать консультацию</button>
-                    <div class="service-price">1000<span>₽</span></div>
-                </div>
-            </div>
-            <div class="service-block" id="third-block">
-                <div class="service-name">Полный расклад на 
-                    офлайн-сеансе</div>
-                <div class="service-description">
-                    <ul>
-                        <li>Расклад у профессионального таролога</li>
-                        <li>Детальный разбор ситуации</li>
-                        <li>Общение с тарологом по видеосвязи</li>
-                        <li>Личное общение с тарологом</li>
-                        <li>Полное погружение и живой контакт</li>
-                    </ul>
-                </div>
-                <div class="service-info">
-                    <button class="service-btn">Записаться на приём</button>
-                    <div class="service-price">1000<span>₽</span></div>
+                <div class="service-block" id="third-block">
+                    <div class="service-name">Полный расклад на 
+                        офлайн-сеансе</div>
+                    <div class="service-description">
+                        <ul>
+                            <li>Расклад у профессионального таролога</li>
+                            <li>Детальный разбор ситуации</li>
+                            <li>Общение с тарологом по видеосвязи</li>
+                            <li>Личное общение с тарологом</li>
+                            <li>Полное погружение и живой контакт</li>
+                        </ul>
+                    </div>
+                    <div class="service-info">
+                        <button class="service-btn">Записаться на приём</button>
+                        <div class="service-price">1000<span>₽</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+    </div>
 <footer>
     <div class="container">
         <div class="footer-title">
@@ -219,7 +243,12 @@
         </div>
         <div class="footer-main">
             <div class="footer-image">
-                <img src="./images/bg-footer.png" alt="#">
+                <picture>
+                    <source srcset="./images/bg-footer-blank.png" media="(max-width: 1260px)">
+                <source srcset="./images/bg-footer.png">
+                <img srcset="./images/bg-footer.png" alt="#">
+                </picture>
+                
                 <div class="footer-form">
                     <form action="">
                             <div class="input-title"><p>Оставь контактные данные,<br> оператор перезвонит</p></div> 
@@ -247,6 +276,7 @@
     <div class="footer-dev-inf">
         <div class="design-block">
             <div class="telegram-info">
+                
                 <img src="./images/tg-icon-black.png" alt="#">
                 <div class="telegram-name">@toadintelegram</div>
             </div>
@@ -261,6 +291,7 @@
         </div>
     </div>
 </footer>
+<script defer src="./scripts/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./scripts/swiper.js"></script>
 </body>
