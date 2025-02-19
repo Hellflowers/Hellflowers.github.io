@@ -1081,6 +1081,9 @@ background-color: transparent;
         width: 200px;
         height: 214px;
     }
+    .image-block{
+        width: 100% !important;
+    }
     .more-info{
         margin: 60px auto;
         
@@ -1097,7 +1100,7 @@ background-color: transparent;
         margin-bottom: 20px;
     }
     .service-block#second-block{
-        height: 462px;
+        height: 520px;
         width: 90%;
         margin: 0 auto;
         flex-wrap: nowrap;
@@ -1105,7 +1108,7 @@ background-color: transparent;
     }
    
     .service-block#third-block{
-        height: 558px;
+        height: 620px;
         width: 90%;
         margin: 0 auto;
         flex-wrap: nowrap;
@@ -1155,6 +1158,9 @@ background-color: transparent;
     .footer-dev-inf{
         width: 100%;
         border-radius: 0;
+    }
+    footer{
+        margin-top: 87px;
     }
 }
 @font-face {
